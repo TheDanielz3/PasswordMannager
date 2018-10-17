@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1539002346 source:c:\users\diogo\desktop\projetofp\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1539531949 source:\\mac\home\documents\github\passwordmanager\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1539216317 source:c:\users\diogo\desktop\passwordmanager\main.c
+	<stdio.h>
+	<stdlib.h>
+
