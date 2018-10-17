@@ -63,7 +63,7 @@ void menuApresentacao()
     printf("\n\n\tBem vindo ao gestor de passwords. Carregue ENTER para continuar\n");
     getchar();
     //system("cls");
-    menuPrincipal();
+    //menuPrincipal();
 }
 
 //Lista os menus disponíveis de acoes possiveis
@@ -100,8 +100,7 @@ void menuPrincipal()
             break;
         case 4:
             //system("cls");
-            sairPrograma();
-            break;
+            return;
     }
 }
 
@@ -506,7 +505,30 @@ void sairPrograma()
 
 int main()
 {
+    char confirm;
     menuApresentacao();
 
-    return 0;
+    menuPrincipal();
+
+
+
+
+
+
+
+
+        printf("\n\tDeseja sair do programa? [S]im ou [N]ao: ");
+        scanf(" %c", &confirm);
+
+        printf("%c",confirm);
+
+        if(confirm == "n");
+        {
+            menuPrincipal();
+        }
+        if(confirm == "s");
+        {
+            return 0;
+        }
+
 }
