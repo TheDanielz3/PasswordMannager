@@ -1,1 +1,4 @@
 language: c
+
+include:
+main.c
