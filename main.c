@@ -507,28 +507,19 @@ int main()
 {
     char confirm;
     menuApresentacao();
-
+ do{
     menuPrincipal();
 
-
-
-
-
-
-
-
-        printf("\n\tDeseja sair do programa? [S]im ou [N]ao: ");
+     printf("\n\tDeseja sair do programa? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
 
         printf("%c",confirm);
 
-        if(confirm == "n");
-        {
-            menuPrincipal();
-        }
-        if(confirm == "s");
-        {
-            return 0;
-        }
+
+ }while(confirm == "n");
+
+
+
+
 
 }
