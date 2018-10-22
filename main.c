@@ -516,7 +516,7 @@ int main()
         printf("%c",confirm);
 
 
- }while(confirm == "n");
+ }while(confirm == 'n');
 
 
 
