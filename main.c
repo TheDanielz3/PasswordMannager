@@ -125,27 +125,27 @@ void menuUtilizadores()
     switch(opc)
     {
         case 1:
-            system("cls");
+           // system("cls");
             inserirUtilizadores();
             break;
 
         case 2:
-            system("cls");
+           // system("cls");
             removerUtilizadores();
             break;
 
         case 3:
-            system("cls");
+           // system("cls");
             alterarUtilizadores();
             break;
 
         case 4:
-            system("cls");
+            //system("cls");
             consultarUtilizadores();
             break;
 
         case 5:
-            system("cls");
+          //  system("cls");
             menuPrincipal();
             break;
     }
@@ -178,12 +178,12 @@ void inserirUtilizadores()
         printf("\n\n\tMENU DE INSERCAO DE UTILIZADORES\n");
         printf("\n\tDeseja inserir mais algum utilizador? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuUtilizadores();
     }
 }
@@ -197,12 +197,12 @@ void removerUtilizadores()
         printf("\n\n\tMENU DE REMOCAO DE UTILIZADORES\n");
         printf("\n\tDeseja remover mais algum utilizador? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuUtilizadores();
     }
 }
@@ -216,12 +216,12 @@ void alterarUtilizadores()
         printf("\n\n\tMENU DE ALTERACAO DE DADOS DE UTILIZADORES\n");
         printf("\n\tDeseja alterar dados de mais algum utilizador? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuUtilizadores();
     }
 }
@@ -240,7 +240,7 @@ void consultarUtilizadores()
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuUtilizadores();
     }
 }
@@ -287,7 +287,7 @@ void menuRecursos()
             break;
 
         case 5:
-            system("cls");
+          //  system("cls");
             menuPrincipal();
             break;
     }
@@ -303,12 +303,12 @@ void inserirRecursos()
         printf("\n\n\tMENU DE INSERCAO DE RECURSOS\n");
         printf("\n\tDeseja inserir mais algum recurso? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -322,12 +322,12 @@ void removerRecursos()
         printf("\n\n\tMENU DE REMOCAO DE RECURSOS\n");
         printf("\n\tDeseja remover mais algum recurso? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -341,12 +341,12 @@ void alterarRecursos()
         printf("\n\n\tMENU DE ALTERACAO DE DADOS DE RECURSOS\n");
         printf("\n\tDeseja alterar informacao de mais algum recurso? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -360,12 +360,12 @@ void consultarRecursos()
         printf("\n\n\tMENU DE CONSULTA DE RECURSOS\n");
         printf("\n\tDeseja consultar mais informacao? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -391,24 +391,24 @@ void menuAcessos()
     switch(opc)
     {
         case 1 :
-            system("cls");
+            //system("cls");
             inserirAcessos();
             break;
         case 2:
-            system("cls");
+            //system("cls");
             removerAcessos();
             break;
         case 3:
-            system("cls");
+            //system("cls");
             alterarAcessos();
             break;
         case 4:
-            system("cls");
+            //system("cls");
             consultarAcessos();
             break;
 
         case 5:
-            system("cls");
+            //system("cls");
             menuPrincipal();
             break;
     }
@@ -428,7 +428,7 @@ void inserirAcessos()
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -447,7 +447,7 @@ void removerAcessos()
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -461,12 +461,12 @@ void alterarAcessos()
         printf("\n\n\tMENU DE ALTERACAO DE DADOS DE ACESSOS\n");
         printf("\n\tDeseja alterar dados de mais algum acesso? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
@@ -480,12 +480,12 @@ void consultarAcessos()
         printf("\n\n\tMENU DE CONSULTA DE ACESSOS\n");
         printf("\n\tDeseja consultar mais algum acesso? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        system("cls");
+        //system("cls");
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
     {
-        system("cls");
+        //system("cls");
         menuRecursos();
     }
 }
