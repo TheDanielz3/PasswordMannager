@@ -7,6 +7,9 @@
 #define MAX_PASSWORD 256
 #define MAX_NOME_RECURSO 100
 #define MAX_DESIGNACAO 10
+#define Sudo_user "a"
+#define Sudo_password "a"
+
 
 typedef struct
 {
@@ -56,15 +59,49 @@ void removerAcessos();
 void alterarAcessos();
 void consultarAcessos();
 
+
+//NOT for instace a global variables its a test
+
+
+
+
+
+
+
 void menuApresentacao()
 {
     //Cor de fundo do programa a fundo azul e cor branca(talvez remover)
     system("color 70");
     printf("\n\n\tBem vindo ao gestor de passwords. Carregue ENTER para continuar\n");
     getchar();
+
+    login();
+
     //system("cls");
     //menuPrincipal();
 }
+
+void login()
+{
+    char atempt;
+    char passatempt;
+
+    printf("\nUsername:");
+    scanf(" %c",&atempt);
+    printf("\nPassword:");
+    scanf(" %c",&passatempt);
+
+    if(atempt == Sudo_user && passatempt == Sudo_password)
+        {
+            return;
+        }
+    else
+        {
+            printf("u are a dump");
+        }
+
+}
+
 
 //Lista os menus disponíveis de acoes possiveis
 void menuPrincipal()
