@@ -59,7 +59,7 @@ void consultarAcessos();
 void menuApresentacao()
 {
     //Cor de fundo do programa a fundo azul e cor branca(talvez remover)
-    system("color 70");
+    //system("color 70");
     printf("\n\n\tBem vindo ao gestor de passwords. Carregue ENTER para continuar\n");
     getchar();
     //system("cls");
