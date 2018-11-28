@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "Acessos.h"
+#include "Utilizadores.h"
+#include "recursos.h"
+
+
+
+
 #define MAX_NOME_USER 100
 #define MAX_NUM_CIVIL 9
 #define MAX_USERNAME 36
@@ -41,11 +48,6 @@ void menuRecursos();
 void menuAcessos();
 void sairPrograma();
 
-//crud utilizadores
-void inserirUtilizadores();
-void removerUtilizadores();
-void alterarUtilizadores();
-void consultarUtilizadores();
 
 //crud recursos
 void inserirRecursos();
@@ -74,6 +76,13 @@ void menuApresentacao()
     //system("color 70");
     printf("\n\n\tBem vindo ao gestor de passwords. Carregue ENTER para continuar\n");
     getchar();
+
+
+
+    //Teste entre os varios Files
+        //TestAcesso();
+        //testuser();
+        //testrecursos();
 
     login();
 
@@ -124,19 +133,16 @@ void menuPrincipal()
     switch(opc)
     {
         case 1 :
-            //system("cls");
             menuUtilizadores();
             break;
         case 2:
-            //system("cls");
             menuRecursos();
             break;
         case 3:
-            //system("cls");
             menuAcessos();
             break;
         case 4:
-            //system("cls");
+
             return;
     }
 }
