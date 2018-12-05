@@ -5,8 +5,7 @@
 #include "Utilizadores.h"
 #include "recursos.h"
 
-
-
+#include "StrucUtilizador.h"
 
 #define MAX_NOME_USER 100
 #define MAX_NUM_CIVIL 9
@@ -17,15 +16,7 @@
 #define Sudo_user "a"
 #define Sudo_password "a"
 
-
-typedef struct
-{
-    int idUtilizador;
-    char nomeUtilizador[MAX_NOME_USER];
-    char idCivil[MAX_NUM_CIVIL];
-    char username[MAX_USERNAME];
-    char password[MAX_PASSWORD];
-} Utilizador;
+struct Utilizador utilizador;
 
 typedef struct
 {
@@ -43,31 +34,10 @@ typedef struct
 
 void menuApresentacao();
 void menuPrincipal();
-void menuUtilizadores();
-void menuRecursos();
+void menuUtilizadores(); // linha 130
+void menuRecursos(); // linha 235
 void menuAcessos();
 void sairPrograma();
-
-
-//crud recursos
-void inserirRecursos();
-void removerRecursos();
-void alterarRecursos();
-void consultarRecursos();
-
-//void acessos
-void inserirAcessos();
-void removerAcessos();
-void alterarAcessos();
-void consultarAcessos();
-
-
-//NOT for instace a global variables its a test
-
-
-
-
-
 
 
 void menuApresentacao()
@@ -107,7 +77,8 @@ void login()
     else
         {
             printf("u are a dump");
-        }
+
+            }
 
 }
 
@@ -142,9 +113,10 @@ void menuPrincipal()
             menuAcessos();
             break;
         case 4:
-
-            return;
+            break;
     }
+
+       return;
 }
 
 void menuUtilizadores()
@@ -168,68 +140,27 @@ void menuUtilizadores()
     switch(opc)
     {
         case 1:
-           // system("cls");
             inserirUtilizadores();
             break;
 
         case 2:
-           // system("cls");
             removerUtilizadores();
             break;
 
         case 3:
-           // system("cls");
             alterarUtilizadores();
             break;
 
         case 4:
-            //system("cls");
             consultarUtilizadores();
             break;
 
         case 5:
-          //  system("cls");
             menuPrincipal();
             break;
     }
 }
 
-//Operações de utilizadores abaixo
-void inserirUtilizadores()
-{
-    /*Utilizador novoUtilizador[20];
-    FILE *dadosUtilizadores = fopen("dadosUtilizadores.txt", "w");
-
-    printf("\n\n\tID do Utilizador --> ");
-    //scanf("%i", &novoUtilizador.idUtilizador);
-    printf("\n\tNome do Utilizador --> ");
-    //scanf("%s", novoUtilizador.nomeUtilizador);
-
-    //printf("\n\tID do utilizador inserido: %i\n", novoUtilizador.idUtilizador);
-    //printf("\n\tNome do utilizador inserido: %i\n", novoUtilizador.nomeUtilizador);
-
-    //fprintf(dadosUtilizadores, "Utilizador: ID do Utilizador --> %i\n", novoUtilizador.idUtilizador);
-    //fprintf(dadosUtilizadores, "\tNome do Utilizador --> %s", novoUtilizador.nomeUtilizador);
-
-    fclose(dadosUtilizadores);*/
-
-    char confirm;
-
-    //Futuramente aqui estarao todas as operacoes da funcao, avaliando no fim a resposta de fim de continuacao
-    do
-    {
-        printf("\n\n\tMENU DE INSERCAO DE UTILIZADORES\n");
-        printf("\n\tDeseja inserir mais algum utilizador? [S]im ou [N]ao: ");
-        scanf(" %c", &confirm);
-        //system("cls");
-    } while(confirm == 'S' || confirm == 's');
-
-    if(confirm == 'N' || confirm == 'n')
-    {
-        //system("cls");
-        menuUtilizadores();
-    }
-}
 
 void removerUtilizadores()
 {
@@ -259,7 +190,7 @@ void alterarUtilizadores()
         printf("\n\n\tMENU DE ALTERACAO DE DADOS DE UTILIZADORES\n");
         printf("\n\tDeseja alterar dados de mais algum utilizador? [S]im ou [N]ao: ");
         scanf(" %c", &confirm);
-        //system("cls");
+
     } while(confirm == 'S' || confirm == 's');
 
     if(confirm == 'N' || confirm == 'n')
@@ -549,17 +480,16 @@ void sairPrograma()
 int main()
 {
     char confirm;
-    menuApresentacao();
- do{
-    menuPrincipal();
 
-     printf("\n\tDeseja sair do programa? [S]im ou [N]ao: ");
-        scanf(" %c", &confirm);
+   menuApresentacao();
+             do{
+                menuPrincipal();
 
-        printf("%c",confirm);
+                printf("\n\tDeseja sair do programa? [S]im ou [N]ao: ");
+                scanf(" %c", &confirm);
+                }while(confirm == 'n');
 
 
- }while(confirm == 'n');
 
 
 

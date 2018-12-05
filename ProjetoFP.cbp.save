@@ -31,21 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\Acessos.c">
+		<Unit filename="Acessos.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\Acessos.h" />
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\Utilizadores.c">
+		<Unit filename="Acessos.h" />
+		<Unit filename="Utilizadores.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\Utilizadores.h" />
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\recursos.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\recursos.h" />
+		<Unit filename="Utilizadores.h" />
+		<Unit filename="\\Mac\Home\Documents\GitHub\PasswordMannager\StrucUtilizador.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="recursos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="recursos.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

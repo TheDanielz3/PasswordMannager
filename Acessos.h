@@ -9,4 +9,17 @@
 
 void TestAcesso(void);
 
+
+void inserirAcessos();
+void removerAcessos();
+void alterarAcessos();
+void consultarAcessos();
+void inserirRecursos();
+void removerRecursos();
+void alterarRecursos();
+void consultarRecursos();
+
+
+
+
 #endif // ACESSOS_H_INCLUDED

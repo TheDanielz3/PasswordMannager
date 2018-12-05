@@ -8,4 +8,11 @@
 
 void testrecursos(void);
 
+void inserirRecursos();
+void removerRecursos();
+void alterarRecursos();
+void consultarRecursos();
+
+
+
 #endif // RECURSOS_H_INCLUDED

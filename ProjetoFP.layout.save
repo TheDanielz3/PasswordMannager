@@ -2,17 +2,33 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="\\Mac\Home\Documents\GitHub\PasswordMannager\autenticar.h" open="1" top="1" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3787" topLine="84" />
+		</Cursor>
+		<Folding>
+			<Collapse line="52" />
+			<Collapse line="72" />
+			<Collapse line="96" />
+			<Collapse line="130" />
+			<Collapse line="178" />
+			<Collapse line="197" />
+			<Collapse line="216" />
+		</Folding>
+	</File>
+	<File name="Acessos.c" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Utilizadores.c" open="1" top="1" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="250" topLine="60" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="410" />
-		</Folding>
+	</File>
+	<File name="Acessos.h" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

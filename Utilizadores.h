@@ -2,6 +2,7 @@
 #define UTILIZADORES_H_INCLUDED
 
 #include "Utilizadores.c"
+#include "StrucUtilizador.h"
 
 
 void testuser(void);
@@ -11,6 +12,6 @@ void inserirUtilizadores();
 void removerUtilizadores();
 void alterarUtilizadores();
 void consultarUtilizadores();
-
+void guardarFicheiros(void);
 
 #endif // UTILIZADORES_H_INCLUDED
